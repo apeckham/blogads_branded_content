@@ -1,10 +1,12 @@
+var doc = $(window.parent.document);
+
 if (typeof (ba_bc_stat) == "undefined") {
     function ba_bc_stat(tracer_id) {
-        if (!$("#" + tracer_id).width()) {
-            $("body").prepend('<div id="' + tracer_id + '" style="top: 0px; left: 0px; width: 1px; height: 1px; position: absolute;"></div>');
+        if (!doc.find("#" + tracer_id).width()) {
+            doc.find("body").prepend('<div id="' + tracer_id + '" style="top: 0px; left: 0px; width: 1px; height: 1px; position: absolute;"></div>');
         }
 
-        $("#" + tracer_id).html('<img src="http://tracer.blogads.com/click.php?zoneid=' + tracer_id + '&rand=' + Math.floor(Math.random() * 99999999) + '" style="width: 1px; height: 1px; border: none;">');
+        doc.find("#" + tracer_id).html('<img src="http://tracer.blogads.com/click.php?zoneid=' + tracer_id + '&rand=' + Math.floor(Math.random() * 99999999) + '" style="width: 1px; height: 1px; border: none;">');
     }
 }
 
@@ -24,14 +26,14 @@ function ba_bc_class() {
             ti: "DTR",
             co: "Define The Relationship. When two people discuss their mutual understanding of a romantic relationship (casual dating, serious boyfriend, etc).",
             pc: "",
-            ul: "http://www.urbandictionary.com/define.php?term=dtr"
+            ul: "http://" + document.location.hostname + "/define.php?term=dtr"
         },
         {
             id: "bromance",
             ti: "Bromance",
             co: "Describes the complicated love and affection shared by two straight males.",
             pc: "",
-            ul: "http://www.urbandictionary.com/define.php?term=bromance"
+            ul: "http://" + document.location.hostname + "/define.php?term=bromance"
         }
     ]; //The pinned posts have higher priority, they appear at the top in the unit.
 
@@ -41,119 +43,119 @@ function ba_bc_class() {
             ti: "It's complicated",
             co: "One of the options for \"Relationship Status\" on Facebook. Refers to a couple in an ambiguous state between \"friends\" and \"in a relationship\".",
             pc: "",
-            ul: "http://www.urbandictionary.com/define.php?term=it%27s%20complicated"
+            ul: "http://" + document.location.hostname + "/define.php?term=it%27s%20complicated"
         },
         {
             id: "datingish",
             ti: "datingish",
             co: "The stage before an actual relationship...... Hanging out and having sex, but not \"boyfriend / girlfriend\".",
             pc: "",
-            ul: "http://www.urbandictionary.com/define.php?term=datingish"
+            ul: "http://" + document.location.hostname + "/define.php?term=datingish"
         },
         {
             id: "wifed_up",
             ti: "wifed up",
             co: "When a man is held down or in check by a female counterpart so as to not engage in social situations with other members of the general public.",
             pc: "",
-            ul: "http://www.urbandictionary.com/define.php?term=wifed+up"
+            ul: "http://" + document.location.hostname + "/define.php?term=wifed+up"
         },
         {
             id: "sprung",
             ti: "sprung",
             co: "The state of being very attracted to a person, obsession often mistaken for love.",
             pc: "",
-            ul: "http://www.urbandictionary.com/define.php?term=sprung"
+            ul: "http://" + document.location.hostname + "/define.php?term=sprung"
         },
         {
             id: "dateability",
             ti: "dateability",
             co: "The degree of \"the quality of being dateable\" that one possesses.",
             pc: "",
-            ul: "http://www.urbandictionary.com/define.php?term=dateability"
+            ul: "http://" + document.location.hostname + "/define.php?term=dateability"
         },
         {
             id: "date_a_thon",
             ti: "Date-a-thon",
             co: "The act of dating on a regular basis. This can include a wide range of activities, such as mini-golf and dinner.",
             pc: "",
-            ul: "http://www.urbandictionary.com/define.php?term=Date-a-thon"
+            ul: "http://" + document.location.hostname + "/define.php?term=Date-a-thon"
         },
         {
             id: "caught_up",
             ti: "Caught up",
             co: "Becoming so involved with a person that you become oblivious to the reality of the situation.",
             pc: "",
-            ul: "http://www.urbandictionary.com/define.php?term=caught%20up"
+            ul: "http://" + document.location.hostname + "/define.php?term=caught%20up"
         },
         {
             id: "friends_with_benefits",
             ti: "friends with benefits",
             co: "Two friends who have a sexual realtionship without being emotionally involved.",
             pc: "",
-            ul: "http://www.urbandictionary.com/define.php?term=friends%20with%20benefits"
+            ul: "http://" + document.location.hostname + "/define.php?term=friends%20with%20benefits"
         },
         {
             id: "bro_code",
             ti: "Bro Code",
             co: "A set of rules meant to be a guideline to live by between Bro's.",
             pc: "",
-            ul: "http://www.urbandictionary.com/define.php?term=bro+code"
+            ul: "http://" + document.location.hostname + "/define.php?term=bro+code"
         },
         {
             id: "bros_before_hoes",
             ti: "bros before hoes",
             co: "The unwritten law that your bros (male friends) should always become before hoes (female with whom you are/hoping to have a relationship with).",
             pc: "",
-            ul: "http://www.urbandictionary.com/define.php?term=bros+before+hoes"
+            ul: "http://" + document.location.hostname + "/define.php?term=bros+before+hoes"
         },
         {
             id: "sisters_before_misters",
             ti: "sisters before misters",
             co: "The unwritten law that dictates that a the wishes of an unmarried woman's or girl's female friends trump those of a men she wants to have a relationship with.",
             pc: "",
-            ul: "http://www.urbandictionary.com/define.php?term=sisters%20before%20misters"
+            ul: "http://" + document.location.hostname + "/define.php?term=sisters%20before%20misters"
         },
         {
             id: "sexting",
             ti: "sexting",
             co: "v: the act of text messaging someone in the hopes of having a sexual encounter with them later; initially casual, transitioning into highly suggestive and even sexually explicit.",
             pc: "",
-            ul: "http://www.urbandictionary.com/define.php?term=sexting"
+            ul: "http://" + document.location.hostname + "/define.php?term=sexting"
         },
         {
             id: "sexplanation",
             ti: "Sexplanation",
             co: "The act or process of explaining to the opposite sex why you want sex or why you just had sex.",
             pc: "",
-            ul: "http://www.urbandictionary.com/define.php?term=sexplanation"
+            ul: "http://" + document.location.hostname + "/define.php?term=sexplanation"
         },
         {
             id: "booty_call",
             ti: "booty call",
             co: "A late night summons -- often made via telephone -- to arrange clandestine sexual liaisons on an ad hoc basis.",
             pc: "",
-            ul: "http://www.urbandictionary.com/define.php?term=booty%20call"
+            ul: "http://" + document.location.hostname + "/define.php?term=booty%20call"
         },
         {
             id: "drunk_dial",
             ti: "Drunk Dial",
             co: "A drunk dial is a communication via telephone (usually through talking but also applies to text messanging) that is somehow embarrassing or absurd.",
             pc: "",
-            ul: "http://www.urbandictionary.com/define.php?term=drunk%20dial"
+            ul: "http://" + document.location.hostname + "/define.php?term=drunk%20dial"
         },
         {
             id: "broactive",
             ti: "Broactive",
             co: "1. (adj./adverb) The act of helping out your fellow bro.",
             pc: "",
-            ul: "http://www.urbandictionary.com/define.php?term=Broactive"
+            ul: "http://" + document.location.hostname + "/define.php?term=Broactive"
         },
         {
             id: "falling",
             ti: "Falling",
             co: "The state of mind and feelings you get when you begin to feel love for a person you are sexually attracted to.",
             pc: "",
-            ul: "http://www.urbandictionary.com/define.php?term=falling"
+            ul: "http://" + document.location.hostname + "/define.php?term=falling"
         }
     ];
 
@@ -196,7 +198,7 @@ function ba_bc_class() {
     //Ad boxes
     var ba_bc_div_of_300x250_ad = '#HP_300x600'; //The div of the 300x250 ad. The code will put the 300x600 unit into this.
 
-    if (!$("#HP_300x600").width()) {
+    if (!doc.find("#HP_300x600").width()) {
         ba_bc_div_of_300x250_ad = '#ROS_Right_160x60';
     }
 
@@ -257,11 +259,11 @@ function ba_bc_class() {
         html += '<embed src="' + ba_bc_videoplayer + '" FlashVars="' + flashvars + '" wmode="transparent" quality="high" bgcolor="#ffffff" width="' + width + '" height="' + height + '" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always"></embed>';
         html += '</object>';
 
-        $("#" + div_id).html(html);
+        doc.find("#" + div_id).html(html);
     };
 
     this.ba_bc_init = function() {
-        $("head").append(ba_bc_css);
+        doc.find("head").append(ba_bc_css);
 
         var self = this;
 
@@ -276,11 +278,11 @@ function ba_bc_class() {
         html += '</div>';
         html += '<div id="ba_bc_impression_tracker" style="top: 0px; left: 0px; width: 1px; height: 1px; position: absolute;"></div>';
 
-        $(ba_bc_div_of_300x250_ad).html(html);
+        doc.find(ba_bc_div_of_300x250_ad).html(html);
 
         if (ba_bc_click_tracker_for_300x600_ad !== '') {
-            $("#ba_bc_tab").click(function() {
-                $("#ba_bc_tab").css("cursor", "pointer");
+            doc.find("#ba_bc_tab").click(function() {
+                doc.find("#ba_bc_tab").css("cursor", "pointer");
                 self.ba_bc_client_btn('300x600_click_on_tab');
             });
         }
@@ -301,13 +303,13 @@ function ba_bc_class() {
     };
 
     this.ba_bc_hide_list = function() {
-        $("#ba_bc_list").hide();
-        $("#ba_bc_container").css("height", "300px");
+        doc.find("#ba_bc_list").hide();
+        doc.find("#ba_bc_container").css("height", "300px");
     };
 
     this.ba_bc_set_items = function(items) {
-        if ($("#ba_bc_list_loading").width())
-            $("#ba_bc_list_loading").remove();
+        if (doc.find("#ba_bc_list_loading").width())
+            doc.find("#ba_bc_list_loading").remove();
 
         if (typeof (items) !== 'object' || items.length < 1)
             this.ba_bc_hide_list();
@@ -328,7 +330,7 @@ function ba_bc_class() {
             }
         }
 
-        $("#ba_bc_list").html($("#ba_bc_list").html() + html);
+        doc.find("#ba_bc_list").html(doc.find("#ba_bc_list").html() + html);
     };
 
     this.ba_bc_get_row = function(item) {
@@ -357,11 +359,11 @@ function ba_bc_class() {
     this.ba_bc_stat = function(id) {
         var tracer_id = ba_bc_default_tracer_id + '_' + id;
 
-        if (!$("#" + tracer_id).width()) {
-            $("body").prepend('<div id="' + tracer_id + '" style="top: 0px; left: 0px; width: 1px; height: 1px; position: absolute;"></div>');
+        if (!doc.find("#" + tracer_id).width()) {
+            doc.find("body").prepend('<div id="' + tracer_id + '" style="top: 0px; left: 0px; width: 1px; height: 1px; position: absolute;"></div>');
         }
 
-        $("#" + tracer_id).html('<img src="http://tracer.blogads.com/click.php?zoneid=' + tracer_id + '&rand=' + Math.floor(Math.random() * 99999999) + '" style="width: 1px; height: 1px; border: none;">');
+        doc.find("#" + tracer_id).html('<img src="http://tracer.blogads.com/click.php?zoneid=' + tracer_id + '&rand=' + Math.floor(Math.random() * 99999999) + '" style="width: 1px; height: 1px; border: none;">');
     };
 
     this.ba_bc_click_on = function(id, url) {
@@ -376,7 +378,7 @@ function ba_bc_class() {
 
     this.ba_bc_set_impression_tracker = function() {
         if (ba_bc_impression_tracker_for_300x600_ad !== '')
-            $("#ba_bc_impression_tracker").html('<img src="' + ba_bc_impression_tracker_for_300x600_ad + '" />');
+            doc.find("#ba_bc_impression_tracker").html('<img src="' + ba_bc_impression_tracker_for_300x600_ad + '" />');
     };
 
     this.ba_bc_shuffle_array = function(array) {
@@ -420,13 +422,10 @@ function ba_bc_class() {
 
     this.ba_bc_is_it_needed_post_page = function() {
         var i;
-        var regexp;
         var posts = ba_bc_pinned_post_items.concat(ba_bc_post_items);
 
         for (i = 0; i < posts.length; i++) {
-            regexp = new RegExp(posts[i]["ul"], "gi");
-
-            if (location.href.search(regexp) !== -1)
+            if (location.href.toLowerCase().indexOf(posts[i]["ul"].toLowerCase()) !== -1)
                 return true;
         }
 
@@ -437,11 +436,11 @@ function ba_bc_class() {
         if (this.ba_bc_is_it_needed_post_page()) {
             var ba_bc_div_of_728x90_ad = 'ba_728x90_top';
 
-            $(".container .big-header").before('<div id="' + ba_bc_div_of_728x90_ad + '"></div>');
-            $("#" + ba_bc_div_of_728x90_ad).html(ba_bc_728x90_ad);
-            $("#" + ba_bc_div_of_728x90_ad).css("width", "728px");
-            $("#" + ba_bc_div_of_728x90_ad).css("height", "90px");
-            $("#" + ba_bc_div_of_728x90_ad).css("margin", "10px auto 10px auto");
+            doc.find(".container .big-header").before('<div id="' + ba_bc_div_of_728x90_ad + '"></div>');
+            doc.find("#" + ba_bc_div_of_728x90_ad).html(ba_bc_728x90_ad);
+            doc.find("#" + ba_bc_div_of_728x90_ad).css("width", "728px");
+            doc.find("#" + ba_bc_div_of_728x90_ad).css("height", "90px");
+            doc.find("#" + ba_bc_div_of_728x90_ad).css("margin", "10px auto 10px auto");
             this.ba_bc_stat('728x90_impressions');
         }
     };
@@ -482,7 +481,7 @@ function ba_bc_class() {
     };
 
     this.ba_bc_hide_other_ads = function() {
-        $("head").append(ba_bc_hide_these_ad_boxes);
+        doc.find("head").append(ba_bc_hide_these_ad_boxes);
     };
 
     this.ba_bc_is_it_preview_page = function() {
