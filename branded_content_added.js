@@ -11,7 +11,7 @@ if (typeof (ba_bc_stat) == "undefined") {
 if (typeof (ba_bc_client_btn) == "undefined") {
     function ba_bc_client_btn(tracer_id, url) {
         ba_bc_stat(tracer_id);
-        window.open(url);
+        window.open(url);cl
     }
 }
 
@@ -171,7 +171,7 @@ function ba_bc_class() {
     var ba_bc_default_tracer_id_prefix = '131230_ud_that_awkward_branded_content'; //For example: 130903_blogads_branded_content
     var ba_bc_default_tracer_id_suffix = 'added';
     var ba_bc_default_tracer_id = ba_bc_default_tracer_id_prefix + '_' + ba_bc_default_tracer_id_suffix;
-    var ba_bc_click_tracker_for_300x600_ad = 'http://ad.doubleclick.net/jump/N1068.altavista.mass.com/B7968832.3;sz=1x1;ord=' + ba_bc_rand + '?'; //For example: http://blogads.com/
+    var ba_bc_click_tracker_for_300x600_ad = 'http://ad.doubleclick.net/clk;278132467;105381749;n'; //For example: http://blogads.com/
     var ba_bc_impression_tracker_for_300x600_ad = 'http://ad.doubleclick.net/ad/N1068.altavista.mass.com/B7968832.3;sz=1x1;ord=' + ba_bc_rand + '?'; //For example: 'http://skins.blogads.com/blogads/blank.gif?rand=' + ba_bc_rand
 
     //Video elements.
