@@ -488,10 +488,8 @@ function ba_bc_class() {
 babcclass = new ba_bc_class();
 
 if (babcclass.ba_bc_show_300x600()) {
-    $(document).ready(function() {
-        //setTimeout("babcclass.ba_bc_set_728x90_ad()", 1000);
-        setTimeout("babcclass.ba_bc_init()", 1000);
-    });
+    
+    babcclass.ba_bc_init();
 
     if (babcclass.ba_bc_is_it_needed_post_page()) {
         //setTimeout("babcclass.ba_bc_hide_other_ads()", 1000);
