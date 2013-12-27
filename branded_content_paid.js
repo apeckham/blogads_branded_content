@@ -273,7 +273,7 @@ function ba_bc_class() {
         html += '</div>';
         html += '<div id="ba_bc_impression_tracker" style="top: 0px; left: 0px; width: 1px; height: 1px; position: absolute;"></div>';
         
-        $(ba_bc_div_of_300x250_ad).html(html);
+        document.write(html);
         
         if (ba_bc_click_tracker_for_300x600_ad !== '') {
             $("#ba_bc_tab").click(function() {
