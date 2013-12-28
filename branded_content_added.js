@@ -342,7 +342,7 @@ function ba_bc_class() {
         //answer += '<a href="' + url_for_picture + '"><img src="' + picture + '" align="left"></a>';
         //answer += '</div>';
         answer += '<div class="text">';
-        answer += '<p class="title"><a href="' + url_for_title + '">' + item["ti"] + '</a></p>';
+        answer += '<p class="title"><a href="' + url_for_title + '" target="_top">' + item["ti"] + '</a></p>';
         answer += '<p>' + content + '</p>';
         answer += '</div>';
         answer += '<div class="clear"></div>';
