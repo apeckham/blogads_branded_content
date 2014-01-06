@@ -171,8 +171,8 @@ function ba_bc_class() {
     var ba_bc_default_tracer_id_prefix = '131230_ud_that_awkward_branded_content'; //For example: 130903_blogads_branded_content
     var ba_bc_default_tracer_id_suffix = 'paid';
     var ba_bc_default_tracer_id = ba_bc_default_tracer_id_prefix + '_' + ba_bc_default_tracer_id_suffix;
-    var ba_bc_click_tracker_for_300x600_ad = 'http://ad.doubleclick.net/clk;278132467;105381749;n'; //For example: http://blogads.com/
-    var ba_bc_impression_tracker_for_300x600_ad = 'http://ad.doubleclick.net/ad/N1068.altavista.mass.com/B7968832.3;sz=1x1;ord=' + ba_bc_rand + '?'; //For example: 'http://skins.blogads.com/blogads/blank.gif?rand=' + ba_bc_rand
+    var ba_bc_click_tracker_for_300x600_ad = 'http://ad.doubleclick.net/clk;278132467;105381835;j'; //For example: http://blogads.com/
+    var ba_bc_impression_tracker_for_300x600_ad = 'http://ad.doubleclick.net/ad/N1068.altavista.mass.com/B7968832.48;sz=1x1;ord=' + ba_bc_rand + '?'; //For example: 'http://skins.blogads.com/blogads/blank.gif?rand=' + ba_bc_rand
 
     //Video elements.
     var ba_bc_videoplayer = 'http://skins.blogads.com/blogads/branded_content/videoplayer/aspect_ratio_16_per_9_v2.swf?v=4';
