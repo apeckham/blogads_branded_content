@@ -154,6 +154,27 @@ function ba_bc_class() {
             co: "The state of mind and feelings you get when you begin to feel love for a person you are sexually attracted to.",
             pc: "",
             ul: "http://" + document.location.hostname + "/define.php?term=falling"
+        },
+        {
+            id: "horizontal_peeing",
+            ti: "Horizontal Peeing",
+            co: "Laying down flat on the toilet to pee.",
+            pc: "",
+            ul: "http://" + document.location.hostname + "/define.php?term=Horizontal%20Peeing"
+        },
+        {
+            id: "cute_videoed",
+            ti: "Cute Videoed",
+            co: "The awkward moment when you see your friend posting a cute video on a girl's FB wall.",
+            pc: "",
+            ul: "http://" + document.location.hostname + "/define.php?term=Cute%20Videoed"
+        },
+        {
+            id: "the_so_moment",
+            ti: "The So... moment",
+            co: "The moment you have the talk about going from hooking up to a relationship.",
+            pc: "",
+            ul: "http://" + document.location.hostname + "/define.php?term=The%20So...%20moment"
         }
     ];
 
@@ -171,7 +192,7 @@ function ba_bc_class() {
     var ba_bc_default_tracer_id_prefix = '131230_ud_that_awkward_branded_content'; //For example: 130903_blogads_branded_content
     var ba_bc_default_tracer_id_suffix = 'paid';
     var ba_bc_default_tracer_id = ba_bc_default_tracer_id_prefix + '_' + ba_bc_default_tracer_id_suffix;
-    var ba_bc_click_tracker_for_300x600_ad = ' http://ad.doubleclick.net/clk;278132467;105381835;j'; //For example: http://blogads.com/
+    var ba_bc_click_tracker_for_300x600_ad = 'http://ad.doubleclick.net/clk;278132467;105381835;j'; //For example: http://blogads.com/
     var ba_bc_impression_tracker_for_300x600_ad = 'http://ad.doubleclick.net/ad/N1068.altavista.mass.com/B7968832.48;sz=1x1;ord=' + ba_bc_rand + '?'; //For example: 'http://skins.blogads.com/blogads/blank.gif?rand=' + ba_bc_rand
 
     //Video elements.
