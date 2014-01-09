@@ -154,6 +154,27 @@ function ba_bc_class() {
             co: "The state of mind and feelings you get when you begin to feel love for a person you are sexually attracted to.",
             pc: "",
             ul: "http://" + document.location.hostname + "/define.php?term=falling"
+        },
+        {
+            id: "horizontal_peeing",
+            ti: "Horizontal Peeing",
+            co: "Laying down flat on the toilet to pee.",
+            pc: "",
+            ul: "http://" + document.location.hostname + "/define.php?term=Horizontal%20Peeing"
+        },
+        {
+            id: "cute_videoed",
+            ti: "Cute Videoed",
+            co: "The awkward moment when you see your friend posting a cute video on a girl's FB wall.",
+            pc: "",
+            ul: "http://" + document.location.hostname + "/define.php?term=Cute%20Videoed"
+        },
+        {
+            id: "the_so_moment",
+            ti: "The So... moment",
+            co: "The moment you have the talk about going from hooking up to a relationship.",
+            pc: "",
+            ul: "http://" + document.location.hostname + "/define.php?term=The%20So...%20moment"
         }
     ];
 
