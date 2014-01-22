@@ -179,8 +179,6 @@ function ba_bc_class() {
     ];
 
     //Date for tune-in.
-    var ba_bc_tomorrow_date = "2014-1-30"; //The date when the tonight version of the skin has to run, for example: 2013-4-1 or 2013-10-10.
-    var ba_bc_tonight_date = "2014-1-31"; //The date when the tonight version of the skin has to run, for example: 2013-4-1 or 2013-10-10.
     var ba_bc_date = new Date(); //Do NOT modify!
     var ba_bc_today = ba_bc_date.getFullYear() + '-' + (ba_bc_date.getMonth() + 1) + '-' + ba_bc_date.getDate(); //It will be: yyyy-m-d
 
@@ -203,12 +201,19 @@ function ba_bc_class() {
     //Sponsored tab for 300x600 unit.
     var ba_bc_sponsored_tab_for_300x600_unit = 'http://skins.blogads.com/urbandictionary/131230_That_Awkward_Moment/sponsored_tab/tab-jan-31.jpg';
 
-    if (ba_bc_today == ba_bc_tomorrow_date || location.href.search(/version\=tomorrow/i) !== -1) {
+    if (ba_bc_today == "2014-1-27" || ba_bc_today == "2014-1-28" || ba_bc_today == "2014-1-29" || location.href.search(/version\=in\_theaters\_friday/i) !== -1) {
+        ba_bc_sponsored_tab_for_300x600_unit = 'http://skins.blogads.com/urbandictionary/131230_That_Awkward_Moment/sponsored_tab/tab-in-theaters-friday.jpg';
+    }
+
+    else if (ba_bc_today == "2014-1-30" || location.href.search(/version\=tomorrow/i) !== -1) {
         ba_bc_sponsored_tab_for_300x600_unit = 'http://skins.blogads.com/urbandictionary/131230_That_Awkward_Moment/sponsored_tab/tab-tomorrow.jpg';
     }
 
-    else if (ba_bc_today == ba_bc_tonight_date || location.href.search(/version\=tonight/i) !== -1) {
-        ba_bc_sponsored_tab_for_300x600_unit = 'http://skins.blogads.com/urbandictionary/131230_That_Awkward_Moment/sponsored_tab/tab-tonight.jpg';
+    else if (ba_bc_today == "2014-1-31" || ba_bc_today == "2014-2-1" || ba_bc_today == "2014-2-2" || 
+            ba_bc_today == "2014-2-3" || ba_bc_today == "2014-2-4" || ba_bc_today == "2014-2-5" || 
+            ba_bc_today == "2014-2-6" || ba_bc_today == "2014-2-7" || ba_bc_today == "2014-2-8" || 
+            ba_bc_today == "2014-2-9" || ba_bc_today == "2014-2-10" || location.href.search(/version\=now\_playing/i) !== -1) {
+        ba_bc_sponsored_tab_for_300x600_unit = 'http://skins.blogads.com/urbandictionary/131230_That_Awkward_Moment/sponsored_tab/tab-now-playing.jpg';
     }
 
     //728x90 ad.
