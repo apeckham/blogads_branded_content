@@ -8,7 +8,7 @@ if (ba_sw_hostname == 'mockups.blogads.com')
 
 //FUNCTIONS
 function ba_sw_set_suggested_word() {
-    var current = window.parent.$("#term").val();
+    var current = $("#term", window.parent.document).val();
     var word_id = -1;
     if (ba_sw_is_suggested_word(current, "trueorfalse")) {
         word_id = ba_sw_is_suggested_word(current, "id");
@@ -27,13 +27,13 @@ function ba_sw_set_suggested_word() {
         var tracer_url_for_unique = "http://tracer.blogads.com/click.php?zoneid=" + ba_sw_tracer_id + "_click_on_suggested_word_" + ba_sw_replace_space(word) + "_unique&rand=" + Math.floor(Math.random() * 99999999) + "&url=" + encodeURIComponent(tracer_url_for_word);
 
         ba_sw_create_cookie(cookie_name, "1", 1);
-        window.parent.$(".define-form .look_up a").attr("href", tracer_url_for_unique);
+        $(".define-form .look_up a", window.parent.document).attr("href", tracer_url_for_unique);
     }
     else {
-        window.parent.$(".define-form .look_up a").attr("href", tracer_url_for_word);
+        $(".define-form .look_up a", window.parent.document).attr("href", tracer_url_for_word);
     }
 
-    window.parent.$(".define-form .look_up a").html(word);
+    $(".define-form .look_up a", window.parent.document).html(word);
 }
 
 function ba_sw_is_suggested_word(word, needed) {
@@ -52,9 +52,9 @@ function ba_sw_is_suggested_word(word, needed) {
 }
 
 function ba_sw_init_submit_btn() {
-    window.parent.$(".define-form .input-append input.btn").unbind();
-    window.parent.$(".define-form .input-append input.btn").click(function() {
-        var word = window.parent.$("#term").val();
+    $(".define-form .input-append input.btn", window.parent.document).unbind();
+    $(".define-form .input-append input.btn", window.parent.document).click(function() {
+        var word = $("#term", window.parent.document).val();
         if (ba_sw_is_suggested_word(word, "trueorfalse")) {
             var cookie_name = ba_sw_tracer_id + "_search_" + ba_sw_replace_space(word);
 
@@ -107,11 +107,11 @@ function ba_sw_stat(id, url) {
     }
 
     else {
-        if (!window.parent.$("#" + id).width()) {
-            window.parent.$("body").prepend('<div id="' + id + '" style="top: 0px; left: 0px; width: 1px; height: 1px; position: absolute;"></div>');
+        if (!$("#" + id, window.parent.document).width()) {
+            $("body", window.parent.document).prepend('<div id="' + id + '" style="top: 0px; left: 0px; width: 1px; height: 1px; position: absolute;"></div>');
         }
 
-        window.parent.$("#" + id).html('<img src="' + tracer_url + '" style="width: 1px; height: 1px; border: none;" />');
+        $("#" + id, window.parent.document).html('<img src="' + tracer_url + '" style="width: 1px; height: 1px; border: none;" />');
     }
 }
 
@@ -121,7 +121,7 @@ function ba_sw_replace_space(string) {
 // /FUNCTIONS
 
 //ACTIONS
-window.parent.$(document).ready(function() {
+$(document, window.parent.document).ready(function() {
     ba_sw_set_suggested_word();
     ba_sw_init_submit_btn();
 });
