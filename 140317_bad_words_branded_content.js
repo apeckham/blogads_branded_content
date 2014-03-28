@@ -175,7 +175,7 @@ var ba_bc_video_url = 'http://vids.perezhilton.com/videos/645bc8e0f3ade/formats/
 var ba_bc_video_first_frame = 'http://vids.perezhilton.com/videos/645bc8e0f3ade/screenshots/300w.jpg';
 
 //Sponsored tab for 300x600 unit.
-var ba_bc_sponsored_tab_for_300x600_unit = 'http://skins.blogads.com/urbandictionary/140317_Bad_Words/sponsored_tab/300x128-march28.jpg';
+var ba_bc_sponsored_tab_for_300x600_unit = 'http://skins.blogads.com/urbandictionary/140317_Bad_Words/sponsored_tab/300x128-now-playing.jpg';
 
 if (ba_bc_today == '2014-3-24' || 
         ba_bc_today == '2014-3-25' || 
